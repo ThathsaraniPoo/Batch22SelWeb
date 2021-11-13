@@ -68,7 +68,7 @@ public class TestApp {
         driver.quit();
     }
 
-    public WebElement waitForElement(WebDriver dr, By locator, int timeout) {
+    public WebElement waitForElement( By locator, int timeout) {
         WebElement element = new WebDriverWait(TestApp.getInstance().getDriver(), timeout).until
                 (ExpectedConditions.presenceOfElementLocated(locator));
         return element;
